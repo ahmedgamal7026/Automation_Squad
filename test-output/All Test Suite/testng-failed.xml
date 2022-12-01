@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Valid(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Parallel_ExecutionFolder.Valid_LoginTC2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ValidLogin" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- Parallel_ExecutionFolder.Valid_LoginTC2 -->
+    </classes>
+  </test> <!-- Valid(failed) -->
+  <test thread-count="5" parallel="tests" name="Invalid(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Parallel_ExecutionFolder.ValidationTC_NameAndPassFields2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="inValidLogin" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- Parallel_ExecutionFolder.ValidationTC_NameAndPassFields2 -->
+    </classes>
+  </test> <!-- Invalid(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

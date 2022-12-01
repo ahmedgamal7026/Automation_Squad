@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" name="ChromeTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Tests.Valid_LoginTC">
+        <methods>
+          <include name="TearDown"/>
+          <include name="ValidLogin" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- Tests.Valid_LoginTC -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

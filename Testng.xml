@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test suite" thread-count="2" parallel="tests">
+ <test name="Chrome test">
+<parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="Tests.Valid_LoginTC"/>
+    </classes>
+  </test> <!-- Default test -->
+ <!-- Default suite -->
+
+ 
+  
+  
+  
+</suite> <!-- Default suite -->
